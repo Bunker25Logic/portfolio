@@ -1,5 +1,6 @@
 @font-face {
-    font-family: 'Orbitron'; /* Apenas o nome, sem sans-serif aqui */
+    font-family: 'Orbitron';
+    /* Apenas o nome, sem sans-serif aqui */
     src: url('../src/fonts/orbitron/Orbitron-VariableFont_wght.ttf') format('truetype');
     font-weight: 100 900;
 }
@@ -14,9 +15,16 @@
 :root {
     --bg-color: #1A0B2E;
     --accent-color: #2E5BFF;
+    --new-color: #666363ab;
     --neon-color: #39FF14;
-   --text-color: #F0F0F0;
+    --text-color: #F0F0F0;
 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -24,16 +32,81 @@
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    font-family: 'Oxanium';
+    font-family: 'Orbitron';
     /* Uma fonte limpa para contraste */
 
 }
 
+header {
+    width: 100%;
+    height: 15vh;
+    background-color: var(--accent-color);
 
+    & h2 {
+        color: var(--text-color);
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        float: left;
+        margin-top: 25px;
+        margin-left: 15px;
+    }
 
-span.code-highlight {
-    color: var(--neon-color);
-    font-family: 'Fira Code', monospace;
-    /* Fonte de código para detalhes */
+    & main ul {
+        display: flex;
+        gap: 10px;
+        float: right;
+        margin-right: 20px;
+        margin-top: 25px;
+        margin-right: 15px;
+        font-size: 1.3rem;
+    }
 
+    & main ul li {
+        list-style: none;
+    }
+
+    & main ul li a {
+        color: var(--text-color);
+        text-decoration: none;
+    }
+}
+
+.inicio {
+    background-image:
+        linear-gradient(rgba(26, 11, 46, 0.8), rgba(26, 11, 46, 0.8)),
+        url('../src/images/capa2Bunker25Logic.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    height: 70vh;
+    margin: 10px auto;
+    padding: 20px;
+    border: 2px double var(--neon-color);
+    display: flex;
+
+    & .conteudo h3 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    & .conteudo p {
+        font-family: 'Oxanium';
+        color: var(--text-color);
+        font-weight: bold;
+        padding: 10px;
+    }
+}
+
+.inicio img{
+    width: 190px;
+    float: left;
+    height: 300px;
+    margin-top: 30px;
+    border: 2px solid var(--neon-color);
+    border-radius: 55px;
+}
+
+.meio{
+    width: 90%;
+    height: 80vh;
 }
