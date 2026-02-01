@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Orbitron'; /* Apenas o nome, sem sans-serif aqui */
+    src: url('../src/fonts/orbitron/Orbitron-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+}
+
+/* Importação correta para Oxanium */
+@font-face {
+    font-family: 'Oxanium';
+    src: url('../src/fonts/Oxanium/Oxanium-VariableFont_wght.ttf') format('truetype');
+    font-weight: 200 800;
+}
+
+:root {
+    --bg-color: #1A0B2E;
+    --accent-color: #2E5BFF;
+    --neon-color: #39FF14;
+   --text-color: #F0F0F0;
+
+}
+
+
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Oxanium';
+    /* Uma fonte limpa para contraste */
+
+}
+
+
+
+span.code-highlight {
+    color: var(--neon-color);
+    font-family: 'Fira Code', monospace;
+    /* Fonte de código para detalhes */
+
+}
