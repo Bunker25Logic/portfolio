@@ -54,7 +54,8 @@ header {
 header h2 {
     float: left;
     color: var(--neon-color);
-    cursor: pointer; /* Indica que é clicável para voltar para a Home */
+    cursor: pointer;
+    /* Indica que é clicável para voltar para a Home */
 }
 
 header main {
@@ -97,7 +98,7 @@ div.image {
     }
 }
 
-.clear{
+.clear {
     clear: both;
 }
 
@@ -115,7 +116,7 @@ div.image {
     padding: 10px;
 }
 
-section.hero .hero-wraper .p1{
+section.hero .hero-wraper .p1 {
     color: var(--neon-color);
     border: 0.6px solid var(--neon-color);
     width: fit-content;
@@ -123,38 +124,42 @@ section.hero .hero-wraper .p1{
     background-color: #12320cb8;
 }
 
-section.hero .hero-wraper h4{
+section.hero .hero-wraper h4 {
     text-align: center;
     font-size: 60px;
-    text-shadow: 
-    0 0 5px #39FF14,   /* Brilho interno/próximo */
-    0 0 10px #39FF14,  /* Difusão média */
-    0 0 20px #39FF14,  /* Difusão larga */
-    0 0 40px #39FF14;  /* Brilho ambiental */
+    text-shadow:
+        0 0 5px #39FF14,
+        /* Brilho interno/próximo */
+        0 0 10px #39FF14,
+        /* Difusão média */
+        0 0 20px #39FF14,
+        /* Difusão larga */
+        0 0 40px #39FF14;
+    /* Brilho ambiental */
     padding: 5px;
 }
 
-section.hero .hero-wraper .verde{
+section.hero .hero-wraper .verde {
     color: var(--neon-color);
 }
 
-section.hero .p2{
+section.hero .p2 {
     text-align: center;
 }
 
-section .botoes{
+section .botoes {
     text-align: center;
     margin-top: 10px;
 }
 
-section .btn-green{
+section .btn-green {
     background-color: var(--neon-color);
     height: 39px;
     padding: 6px;
     cursor: pointer;
 }
 
-section .btn{
+section .btn {
     border: 1px solid var(--neon-color);
     background-color: var(--bg-color);
     height: 39px;
@@ -163,7 +168,7 @@ section .btn{
     color: var(--text-color);
 }
 
-div.down-text{
+div.down-text {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid var(--text-color);
@@ -172,14 +177,14 @@ div.down-text{
     opacity: 0.5;
 }
 
-div.card{
+div.card {
     width: 33.3%;
     height: 250px;
     background-color: var(--bg-color2);
     border-radius: 20px 5px;
 }
 
-.container{
+.container {
     display: flex;
     gap: 30px;
     margin: 20px 10px;
@@ -189,33 +194,37 @@ div.card{
     border-bottom: 1px solid var(--text-color);
 }
 
-div.card h3{
+div.card h3 {
     text-align: center;
     padding: 20px;
     color: var(--neon-color);
-        text-shadow: 
-    0 0 5px #39FF14,   /* Brilho interno/próximo */
-    0 0 10px #39FF14,  /* Difusão média */
-    0 0 20px #39FF14,  /* Difusão larga */
-    0 0 40px #39FF14;  /* Brilho ambiental */
+    text-shadow:
+        0 0 5px #39FF14,
+        /* Brilho interno/próximo */
+        0 0 10px #39FF14,
+        /* Difusão média */
+        0 0 20px #39FF14,
+        /* Difusão larga */
+        0 0 40px #39FF14;
+    /* Brilho ambiental */
 }
 
-div.card p{
+div.card p {
     padding: 25px;
 }
 
-div.project-page{
+div.project-page {
     width: 33.3%;
     height: 350px;
     background-color: var(--neon-color2);
     border: 1px solid var(--neon-color);
 }
 
-div.project-page p{
+div.project-page p {
     font-size: 12px;
 }
 
-div.project-page a{
+div.project-page a {
     display: block;
     text-align: center;
     margin-top: 2px;
@@ -224,11 +233,11 @@ div.project-page a{
 
 }
 
-div.project-page a:hover{
+div.project-page a:hover {
     color: var(--accent-color)
 }
 
-div.project-wraper{
+div.project-wraper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -237,22 +246,26 @@ div.project-wraper{
     height: 75vh;
 }
 
-div.project-wraper h3{
+div.project-wraper h3 {
     text-align: center;
     padding: 20px;
     color: var(--neon-color);
-        text-shadow: 
-    0 0 5px #39FF14,   /* Brilho interno/próximo */
-    0 0 10px #39FF14,  /* Difusão média */
-    0 0 20px #39FF14,  /* Difusão larga */
-    0 0 40px #39FF14;  /* Brilho ambiental */
+    text-shadow:
+        0 0 5px #39FF14,
+        /* Brilho interno/próximo */
+        0 0 10px #39FF14,
+        /* Difusão média */
+        0 0 20px #39FF14,
+        /* Difusão larga */
+        0 0 40px #39FF14;
+    /* Brilho ambiental */
 }
 
-div.project-wraper p{
+div.project-wraper p {
     padding: 20px;
 }
 
-div.mini-cards{
+div.mini-cards {
     display: flex;
     gap: 20px;
     justify-content: space-evenly;
@@ -261,7 +274,7 @@ div.mini-cards{
 }
 
 
-div.mini-cards img{
+div.mini-cards img {
     background-color: var(--bg-color);
     border: 1px solid var(--neon-color);
     border-radius: 20px;
@@ -271,53 +284,57 @@ div.mini-cards img{
 
 }
 
-#projetos{
+#projetos {
     color: var(--neon-color);
 }
 
-#habilidades{
+#habilidades {
     color: var(--neon-color);
 }
 
-.projects{
+.projects {
     border-bottom: 1px solid var(--text-color);
 }
 
-section.contatos{
+section.contatos {
     margin-top: 20px;
 }
 
-div.contatos-wraper{
+div.contatos-wraper {
     display: inline-block;
-        background-color: var(--bg-color2);
+    background-color: var(--bg-color2);
 
 }
 
-div.contatos-wraper p{
+div.contatos-wraper p {
     padding: 30px;
     color: var(--neon-color);
     text-align: center;
 }
 
-.perfil-text{
+.perfil-text {
     width: 50%;
     margin: 0 auto;
 
 }
 
-div.contatos-wraper h1{
+div.contatos-wraper h1 {
     position: relative;
     text-align: center;
     color: var(--neon-color);
     text-shadow:
-    0 0 5px #39FF14,   /* Brilho interno/próximo */
-    0 0 10px #39FF14,  /* Difusão média */
-    0 0 20px #39FF14,  /* Difusão larga */
-    0 0 40px #39FF14;  /* Brilho ambiental */
+        0 0 5px #39FF14,
+        /* Brilho interno/próximo */
+        0 0 10px #39FF14,
+        /* Difusão média */
+        0 0 20px #39FF14,
+        /* Difusão larga */
+        0 0 40px #39FF14;
+    /* Brilho ambiental */
 
 }
 
-div.contatos-wraper img{
+div.contatos-wraper img {
     width: 200px;
     border-radius: 45px;
     margin: 20px auto;
@@ -326,12 +343,12 @@ div.contatos-wraper img{
 
 }
 
-div.contatos-social img{
+div.contatos-social img {
     width: 35px;
     margin-left: 35px;
 }
 
-div.contatos-social{
+div.contatos-social {
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -339,9 +356,10 @@ div.contatos-social{
 
 }
 
-div.icon{
+div.icon {
     background-color: var(--bg-color2);
-    margin-bottom: 20px; /* Aumentado para dar espaço ao texto abaixo */
+    margin-bottom: 20px;
+    /* Aumentado para dar espaço ao texto abaixo */
     background-color: var(--neon-color);
     padding: 20px;
     border-radius: 35px;
@@ -350,7 +368,8 @@ div.icon{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative; /* Necessário para posicionar o texto em relação à div */
+    position: relative;
+    /* Necessário para posicionar o texto em relação à div */
 }
 
 div.icon p {
@@ -358,7 +377,8 @@ div.icon p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: max-content; /* Faz a largura se ajustar ao texto */
+    width: max-content;
+    /* Faz a largura se ajustar ao texto */
     opacity: 0;
     transition: 0.3s;
 }
@@ -376,7 +396,7 @@ div.icon p a:hover {
     color: rgb(124, 122, 122);
 }
 
-div.icon img{
+div.icon img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -429,12 +449,14 @@ div.icon:hover img {
         gap: 10px;
     }
 
-    .container, div.project-wraper {
+    .container,
+    div.project-wraper {
         flex-direction: column;
         height: auto;
     }
 
-    div.card, div.project-page {
+    div.card,
+    div.project-page {
         width: 100%;
         margin-bottom: 20px;
     }
@@ -442,7 +464,7 @@ div.icon:hover img {
     .perfil-text {
         width: 90%;
     }
-    
+
     div.contatos-wraper {
         width: 80%;
         padding: 20px;
@@ -451,7 +473,7 @@ div.icon:hover img {
         border-radius: 35px;
     }
 
-    div.icon{
+    div.icon {
         width: 60px;
         height: 60px;
         padding: 10px;
@@ -461,6 +483,6 @@ div.icon:hover img {
 
 }
 
-section.contatos{
+section.contatos {
     display: none;
 }
