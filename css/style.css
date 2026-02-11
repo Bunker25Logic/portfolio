@@ -14,9 +14,11 @@
 
 :root {
     --bg-color: #1A0B2E;
+    --bg-color2: #280557;
     --accent-color: #2E5BFF;
     --new-color: #666363ab;
     --neon-color: #39FF14;
+    --neon-color2: #041602;
     --text-color: #F0F0F0;
 
 }
@@ -52,6 +54,7 @@ header {
 header h2 {
     float: left;
     color: var(--neon-color);
+    cursor: pointer; /* Indica que é clicável para voltar para a Home */
 }
 
 header main {
@@ -94,11 +97,16 @@ div.image {
     }
 }
 
+.clear{
+    clear: both;
+}
+
 .hero {
-    height: 100vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     margin-top: 7%;
+    margin-bottom: 10px;
 }
 
 .hero-wraper {
@@ -153,4 +161,306 @@ section .btn{
     padding: 6px;
     cursor: pointer;
     color: var(--text-color);
+}
+
+div.down-text{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--text-color);
+    padding: 10px;
+    color: var(--neon-color);
+    opacity: 0.5;
+}
+
+div.card{
+    width: 33.3%;
+    height: 250px;
+    background-color: var(--bg-color2);
+    border-radius: 20px 5px;
+}
+
+.container{
+    display: flex;
+    gap: 30px;
+    margin: 20px 10px;
+    justify-content: space-between;
+    height: 85vh;
+    align-items: center;
+    border-bottom: 1px solid var(--text-color);
+}
+
+div.card h3{
+    text-align: center;
+    padding: 20px;
+    color: var(--neon-color);
+        text-shadow: 
+    0 0 5px #39FF14,   /* Brilho interno/próximo */
+    0 0 10px #39FF14,  /* Difusão média */
+    0 0 20px #39FF14,  /* Difusão larga */
+    0 0 40px #39FF14;  /* Brilho ambiental */
+}
+
+div.card p{
+    padding: 25px;
+}
+
+div.project-page{
+    width: 33.3%;
+    height: 350px;
+    background-color: var(--neon-color2);
+    border: 1px solid var(--neon-color);
+}
+
+div.project-page p{
+    font-size: 12px;
+}
+
+div.project-page a{
+    display: block;
+    text-align: center;
+    margin-top: 2px;
+    text-decoration: none;
+    color: var(--neon-color);
+
+}
+
+div.project-page a:hover{
+    color: var(--accent-color)
+}
+
+div.project-wraper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin: 20px 10px;
+    height: 75vh;
+}
+
+div.project-wraper h3{
+    text-align: center;
+    padding: 20px;
+    color: var(--neon-color);
+        text-shadow: 
+    0 0 5px #39FF14,   /* Brilho interno/próximo */
+    0 0 10px #39FF14,  /* Difusão média */
+    0 0 20px #39FF14,  /* Difusão larga */
+    0 0 40px #39FF14;  /* Brilho ambiental */
+}
+
+div.project-wraper p{
+    padding: 20px;
+}
+
+div.mini-cards{
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    color: var(--neon-color);
+    cursor: pointer;
+}
+
+
+div.mini-cards img{
+    background-color: var(--bg-color);
+    border: 1px solid var(--neon-color);
+    border-radius: 20px;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+
+}
+
+#projetos{
+    color: var(--neon-color);
+}
+
+#habilidades{
+    color: var(--neon-color);
+}
+
+.projects{
+    border-bottom: 1px solid var(--text-color);
+}
+
+section.contatos{
+    margin-top: 20px;
+}
+
+div.contatos-wraper{
+    display: inline-block;
+        background-color: var(--bg-color2);
+
+}
+
+div.contatos-wraper p{
+    padding: 30px;
+    color: var(--neon-color);
+    text-align: center;
+}
+
+.perfil-text{
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+div.contatos-wraper h1{
+    position: relative;
+    text-align: center;
+    color: var(--neon-color);
+    text-shadow:
+    0 0 5px #39FF14,   /* Brilho interno/próximo */
+    0 0 10px #39FF14,  /* Difusão média */
+    0 0 20px #39FF14,  /* Difusão larga */
+    0 0 40px #39FF14;  /* Brilho ambiental */
+
+}
+
+div.contatos-wraper img{
+    width: 200px;
+    border-radius: 45px;
+    margin: 20px auto;
+    display: block;
+    border: 2px solid var(--neon-color);
+
+}
+
+div.contatos-social img{
+    width: 35px;
+    margin-left: 35px;
+}
+
+div.contatos-social{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+
+}
+
+div.icon{
+    background-color: var(--bg-color2);
+    margin-bottom: 20px; /* Aumentado para dar espaço ao texto abaixo */
+    background-color: var(--neon-color);
+    padding: 20px;
+    border-radius: 35px;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Necessário para posicionar o texto em relação à div */
+}
+
+div.icon p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: max-content; /* Faz a largura se ajustar ao texto */
+    opacity: 0;
+    transition: 0.3s;
+}
+
+div.icon:hover p {
+    opacity: 1;
+}
+
+div.icon p a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+div.icon p a:hover {
+    color: rgb(124, 122, 122);
+}
+
+div.icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    border-radius: 35px;
+    transition: 0.3s;
+}
+
+div.icon:hover img {
+    opacity: 0.3;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    header main ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        float: none;
+    }
+
+    header main ul li {
+        margin-left: 0;
+    }
+
+    .hero {
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .hero-wraper {
+        width: 100%;
+        height: auto;
+    }
+
+    section.hero .hero-wraper h4 {
+        font-size: 40px;
+    }
+
+    div.down-text {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .container, div.project-wraper {
+        flex-direction: column;
+        height: auto;
+    }
+
+    div.card, div.project-page {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .perfil-text {
+        width: 90%;
+    }
+    
+    div.contatos-wraper {
+        width: 80%;
+        padding: 20px;
+        margin: 0 auto;
+        display: block;
+        border-radius: 35px;
+    }
+
+    div.icon{
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+    }
+
+
+
+}
+
+section.contatos{
+    display: none;
 }
