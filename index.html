@@ -4,187 +4,339 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Wellinton Oliveira (Bunker25Logic) - Desenvolvedor Fullstack e Mobile focado em aplicações web e mobile. Explore meus projetos, habilidades e aplicativos na Bunker25 Store.">
+    <meta name="keywords" content="Wellinton Oliveira, Bunker25Logic, Desenvolvedor Fullstack, Desenvolvedor Mobile, JavaScript, React Native, CSS, Portfólio, Bunker25 Store, Aplicativos Móveis">
+    <meta name="author" content="Wellinton Oliveira">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph/Facebook META TAGS -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bunker25logic.github.io/">
+    <meta property="og:title" content="Wellinton Oliveira - Bunker25Logic">
+    <meta property="og:description" content="Explore o portfólio de Wellinton Oliveira, Desenvolvedor Fullstack/Mobile. Conheça meus projetos, stack tecnológica e aplicativos na Bunker25 Store.">
+    <meta property="og:image" content="https://bunker25logic.github.io/src/images/perfil.png">
+
+    <!-- Twitter META TAGS -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Bunker25Logic | Portfólio & Store">
+    <meta property="twitter:description" content="Desenvolvimento web com lógica limpa e design premium. Acesse a Bunker25 Store para baixar aplicativos.">
+    <link rel="icon" type="image/png" href="src/images/ia.png">
+    
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Wellinton Oliveira - Bunker25Logic | Fullstack & Mobile Developer</title>
 </head>
 
 <body>
-    <header>
-        <h2>Wellinton Oliveira</h2>
-        <main>
+    <header class="navbar-pro">
+        <h2 class="logo-pro">Wellinton <span class="verde">Oliveira</span></h2>
+        
+        <!-- Toggle button for mobile -->
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+        <nav class="nav-links">
             <ul>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#" data-page="contatos">Contato</a></li>
+                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="#" data-page="aplicacoes" class="nav-link">Aplicações</a></li>
+                <li><a href="#" data-page="contatos" class="nav-link">Contato</a></li>
             </ul>
-        </main>
-        <div class="image">
-            <p>sistem online</p>
-            <img src="src/images/accaunt.png" alt="icon green">
+        </nav>
+        
+        <div class="system-status">
+            <div class="status-indicator"></div>
+            <p>System Online</p>
         </div>
     </header>
-    <section class="hero">
-        <div class="hero-wraper">
-            <p class="p1">inicializando modulo logico...</p>
-            <h4>Bunker25</h4>
-            <h4 class="verde">Logic</h4>
-            <p class="p2">desenbaraçando codigos, construindo realidades</p>
-            <div class="botoes">
-                <button class="btn-green">ACESSE O BUNKER</button>
-                <button class="btn">VER_REGISTROS</button>
+
+    <section class="hero hero-pro">
+        <div class="hero-wraper hero-content-pro">
+            <div class="sys-init-box">
+                <span class="typing-text">user@bunker25:~$ inicializando modulo logico...</span>
+                <span class="cursor">_</span>
+            </div>
+            
+            <h1 class="glitch-title" data-text="Bunker25">Bunker25</h1>
+            <h1 class="glitch-title verde" data-text="Logic">Logic</h1>
+            
+            <p class="hero-subtitle">Desembaraçando códigos, construindo realidades digitais.</p>
+            
+            <div class="botoes botoes-pro">
+                <button class="btn-primary-pro" onclick="document.getElementById('projetos').scrollIntoView({behavior: 'smooth'})">
+                    <span class="btn-content">ACESSE O BUNKER</span>
+                </button>
+                <a href="https://github.com/Bunker25Logic" target="_blank" class="btn-secondary-pro">
+                    VER_REGISTROS
+                </a>
             </div>
         </div>
-
-
-    </section><!--hero-->
+    </section>
 
     <div class="clear"></div>
 
-    <div class="down-text">
-        <p>010101001 010100101 01001</p>
-        <p>html 99,999% css 75,999%</p>
-        <br>
-        <p>sistem online...</p>
+    <div class="down-text down-text-pro">
+        <div class="binary-decor">010101001 010100101 01001</div>
+        <div class="skills-ticker">
+            <span>HTML 99.9%</span> <span class="divider-dot">•</span> <span>CSS 85.0%</span> <span class="divider-dot">•</span> <span>JS 80.0%</span>
+        </div>
     </div>
 
     <section class="meio">
-        <h2 id="habilidades">Habilidades</h2>
-        <div class="container">
-            <div class="card">
-                <h3>JavaScript Vanilha</h3>
-                <p>arquiteturas logicas, complexas e interações front end de alta performace sem bibliotecas pesadas</p>
-            </div><!--card-->
+        <h2 id="habilidades" class="section-title">Minhas <span class="verde">Habilidades</span></h2>
+        <div class="skills-grid">
+            <div class="skill-card premium-glass">
+                <div class="skill-header-card">
+                    <div class="skill-icon-txt js-color">JS</div>
+                    <h3>JavaScript Vanilla</h3>
+                </div>
+                <p>Arquiteturas complexas e interações de alta performance sem bibliotecas pesadas.</p>
+                <div class="skill-progress"><div class="progress-bar" style="width: 95%;"></div></div>
+            </div>
 
-            <div class="card">
-                <h3>HTML</h3>
-                <p>estruturação web com html utilizando boas praticas e focando em codigo limpo e moderno</p>
-            </div><!--card-->
+            <div class="skill-card premium-glass">
+                <div class="skill-header-card">
+                    <img src="src/images/biblioteca.png" alt="RN" class="skill-icon-img">
+                    <h3>React Native & Expo</h3>
+                </div>
+                <p>Desenvolvimento mobile moderno, multiplataforma, ágil e com interfaces nativas de ponta.</p>
+                <div class="skill-progress"><div class="progress-bar rn-color" style="width: 90%;"></div></div>
+            </div>
 
-            <div class="card">
-                <h3>CSS</h3>
-                <p>folhas de estilização bem estruturadas e organizadas, com uso de flexbox e responsividade.</p>
-            </div><!--card-->
+            <div class="skill-card premium-glass">
+                <div class="skill-header-card">
+                    <img src="src/images/html-5.png" alt="HTML5" class="skill-icon-img">
+                    <h3>HTML5</h3>
+                </div>
+                <p>Estruturação web focada em código semântico, boas práticas, limpo e extremamente funcional.</p>
+                <div class="skill-progress"><div class="progress-bar html-color" style="width: 99%;"></div></div>
+            </div>
 
-            <div class="card">
-                <h3>Git</h3>
-                <p>versionamento de codigo a nivel padrao e funcional, com segurança.</p>
-            </div><!--card-->
+            <div class="skill-card premium-glass">
+                <div class="skill-header-card">
+                    <img src="src/images/css3.png" alt="CSS3" class="skill-icon-img">
+                    <h3>CSS3 Avançado</h3>
+                </div>
+                <p>Estilizações flexbox, grid, responsividade minuciosa e glassmorphism profissional.</p>
+                <div class="skill-progress"><div class="progress-bar css-color" style="width: 85%;"></div></div>
+            </div>
 
-        </div><!--container-->
-    </section><!--meio-->
+            <div class="skill-card premium-glass">
+                <div class="skill-header-card">
+                    <div class="skill-icon-txt git-color">Git</div>
+                    <h3>Git</h3>
+                </div>
+                <p>Versionamento de código estruturado, seguro, com commits limpos para colaboração avançada.</p>
+                <div class="skill-progress"><div class="progress-bar" style="width: 80%;"></div></div>
+            </div>
+        </div>
+    </section>
     <div class="clear"></div>
 
     <section class="projects">
-        <h2 id="projetos">Meus Projetos</h2>
-        <div class="project-wraper">
-            <div class="project-page">
-                <h3>wIDE</h3>
-                <a href="https://bunker25logic.github.io/wIDE/">Visite o projeto</a>
-                <p>Editor de código web progressivo
-                    💻 Tecnologias
-                    React 19 - TypeScript 5.8 - Vite 6 - Service Worker - LocalStorage - GitHub Pages
-                    ⚙️ Funcionalidades
-                    Editores HTML/CSS/JS com live preview (debounce 600ms)
-                    Console integrado com captura de logs via postMessage
-                    Sistema de projetos com persistência local
+        <h2 id="projetos" class="section-title">Meus <span class="verde">Projetos</span></h2>
+        <div class="projects-grid">
+            <!-- Projeto wIDE -->
+            <div class="project-card-pro premium-glass">
+                <div class="project-header-pro">
+                    <h3>wIDE <span class="status-badge pulse">Ativo</span></h3>
+                    <p class="project-desc">Editor de código web progressivo com live preview e console integrado via postMessage. Sistema de projetos com persistência local avançada.</p>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-tag">React 19</span>
+                    <span class="tech-tag">TypeScript 5.8</span>
+                    <span class="tech-tag">Vite 6</span>
+                </div>
+                <div class="project-footer">
+                    <div class="mini-cards">
+                        <img src="src/images/biblioteca.png" alt="react">
+                        <img src="src/images/ts.png" alt="typescript">
+                        <img src="src/images/ia.png" alt="ia">
+                    </div>
+                    <a href="https://bunker25logic.github.io/wIDE/" target="_blank" class="btn-link-pro">Acessar</a>
+                </div>
+            </div>
 
-                </p>
+            <!-- Projeto GameDevTools -->
+            <div class="project-card-pro premium-glass">
+                <div class="project-header-pro">
+                    <h3>WGameDevTools <span class="status-badge">Completo</span></h3>
+                    <p class="project-desc">Suíte de 8 ferramentas web para desenvolvimento de jogos, combinando IA generativa e processamento visual direto no navegador.</p>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-tag">Gemini AI</span>
+                    <span class="tech-tag">Computer Vision</span>
+                </div>
+                <div class="project-footer">
+                    <div class="mini-cards">
+                        <img src="src/images/biblioteca.png" alt="react">
+                        <img src="src/images/ts.png" alt="typescript">
+                        <img src="src/images/html-5.png" alt="html5">
+                        <img src="src/images/ia.png" alt="ia">
+                        <img src="src/images/css3.png" alt="css3">
+                    </div>
+                    <a href="https://bunker25logic.github.io/WGameDevTools/" target="_blank" class="btn-link-pro">Acessar</a>
+                </div>
+            </div>
 
-                <div class="mini-cards">
-                    <img src="src/images/biblioteca.png" alt="react">
-                    <img src="src/images/ts.png" alt="typescript">
-                    <img src="src/images/ia.png" alt="ia">
+            <!-- Projeto Sindicato -->
+            <div class="project-card-pro premium-glass">
+                <div class="project-header-pro">
+                    <h3>STB-AC <span class="status-badge">Oficial</span></h3>
+                    <p class="project-desc">Plataforma institucional do Sindicato dos Taxistas do Acre. Divulga serviços, histórico e contato com navegação e responsividade fluida.</p>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JS Vanilla</span>
+                </div>
+                <div class="project-footer">
+                    <div class="mini-cards">
+                        <img src="src/images/html-5.png" alt="HTML5">
+                        <img src="src/images/css3.png" alt="CSS3">
+                        <img src="src/images/js.png" alt="JavaScript">
+                    </div>
+                    <a href="https://bunker25logic.github.io/sindicato-dos-taxistas/" target="_blank" class="btn-link-pro">Acessar</a>
+                </div>
+            </div>
+
+            <!-- Projeto Code Practice -->
+            <div class="project-card-pro premium-glass">
+                <div class="project-header-pro">
+                    <h3>Code Practice <span class="status-badge pulse">Educação</span></h3>
+                    <p class="project-desc">Plataforma full-stack de desafios de código. Oferece editor integrado, feedback real-time e sistema gamificado com mais de 450 exercícios.</p>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Tailwind</span>
+                    <span class="tech-tag">Radix UI</span>
+                </div>
+                <div class="project-footer">
+                    <div class="mini-cards">
+                        <img src="src/images/biblioteca.png" alt="react">
+                        <img src="src/images/ts.png" alt="typescript">
+                        <img src="src/images/html-5.png" alt="html5">
+                        <img src="src/images/ia.png" alt="ia">
+                        <img src="src/images/css3.png" alt="css3">
+                    </div>
+                    <a href="https://bunker25logic.github.io/codePratice/" target="_blank" class="btn-link-pro">Acessar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="aplicacoes">
+        <h2 class="section-title">Bunker25 <span class="verde">Store</span></h2>
+        <div class="app-store-wraper">
+            <div class="app-card-store premium-glass">
+                <div class="app-header-advanced">
+                    <div class="app-icon-container">
+                        <img src="src/images/icon.png" alt="App Icon" class="app-icon-pro">
+                    </div>
+                    <div class="app-info-pro">
+                        <div class="app-title-row">
+                            <h3>Frases</h3>
+                            <span class="badge-pro">Oficial</span>
+                        </div>
+                        <p class="app-developer">Bunker25Logic</p>
+                        
+                        <div class="app-stats">
+                            <div class="stat">
+                                <span class="stat-value">5.0 <span class="star">★</span></span>
+                                <span class="stat-label">99+ Avaliações</span>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat">
+                                <span class="stat-value">Grátis</span>
+                                <span class="stat-label">Instalação</span>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat">
+                                <span class="stat-value">v1.0.0</span>
+                                <span class="stat-label">Versão</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-            </div><!--project-page-->
-
-            <div class="project-page">
-                <h3>WGameDevTools</h3>
-                <a href="https://bunker25logic.github.io/WGameDevTools/">Visite o projeto</a>
-                <p>WGameDevTools é uma suíte completa de 8 ferramentas web profissionais para desenvolvimento de jogos,
-                    combinando IA (Gemini) e visão computacional. Oferece extração de frames, remoção de fundo, pixel
-                    art, animação de sprites, upscaling e mais - tudo processado localmente no navegador sem instalação.
-                </p>
-
-                <div class="mini-cards">
-                    <img src="src/images/biblioteca.png" alt="react">
-                    <img src="src/images/ts.png" alt="typescript">
-                    <img src="src/images/html-5.png" alt="html5">
-                    <img src="src/images/ia.png" alt="ia">
-                    <img src="src/images/css3.png" alt="css3">
+                <div class="app-action-bar">
+                    <p class="app-short-desc">Inspiração diária em suas mãos. Frases de lógica, código e motivação.</p>
+                    <a href="https://github.com/Bunker25Logic/aplicacao/releases/download/v1.0.0/frases.apk" class="btn-download-pro" download>
+                        BAIXAR APK
+                        <span class="download-size">60,2 MB</span>
+                    </a>
                 </div>
 
-            </div><!--project-page-->
-
-            <div class="project-page">
-                <h3>sindicato-dos-taxistas</h3>
-                <a href="https://bunker25logic.github.io/sindicato-dos-taxistas/">Visite o projeto</a>
-                <p>Website institucional desenvolvido para o Sindicato dos Taxistas de Brasiléia - Acre (STB-AC). O
-                    projeto apresenta uma plataforma web moderna e responsiva que divulga os serviços, histórico e
-                    informações de contato da entidade sindical.</p>
-
-                <div class="mini-cards">
-                    <img src="src/images/html-5.png" alt="HTML5">
-                    <img src="src/images/css3.png" alt="CSS3">
-                    <img src="src/images/js.png" alt="JavaScript">
+                <div class="app-whats-new">
+                    <h4>O que há de novo</h4>
+                    <p>- Lançamento oficial da plataforma de frases.<br>- Interface responsiva inspirada no Bunker25.</p>
                 </div>
 
-            </div><!--project-page-->
-
-            <div class="project-page">
-                <h3>Code pratice</h3>
-                <a href="https://bunker25logic.github.io/codePratice/">Visite o projeto</a>
-                <p>**Code Practice** - Plataforma full-stack de desafios de programação com mais de 450 exercícios
-                    interativos. Desenvolvida com React 19, TypeScript, Vite e Express, oferece editor de código
-                    integrado, feedback em tempo real e sistema de progresso gamificado. Interface moderna com Tailwind
-                    CSS 4, componentes acessíveis Radix UI e animações Framer Motion.</p>
-
-                <div class="mini-cards">
-                    <img src="src/images/biblioteca.png" alt="react">
-                    <img src="src/images/ts.png" alt="typescript">
-                    <img src="src/images/html-5.png" alt="html5">
-                    <img src="src/images/ia.png" alt="ia">
-                    <img src="src/images/css3.png" alt="css3">
+                <div class="app-screenshots-carousel">
+                    <div class="screenshot-wrapper">
+                        <img src="src/images/screenshot-app.png" alt="Screenshot 1" class="screenshot-pro">
+                    </div>
+                    <div class="screenshot-wrapper">
+                        <img src="src/images/screenshot-app2.png" alt="Screenshot 2" class="screenshot-pro">
+                    </div>
                 </div>
-
-            </div><!--project-page-->
+            </div>
         </div>
     </section>
 
     <section class="contatos">
-        <div class="contatos-wraper">
-            <img src="src/images/perfil.png" alt="">
-            <h1>Wellinton Oliveira</h1>
-            <p class="perfil-text">Sou estudante de Ciência da Computação focado em construir o futuro da web através de
-                lógica limpa e ferramentas eficientes. Sob a identidade do Bunker25, transformo o caos em código
-                organizado, utilizando JavaScript (Vanilla) e C# para criar soluções que vão de ferramentas de
-                desenvolvimento a jogos web funcionais.
-
-                Minha metodologia é baseada em micro-objetivos e alta produtividade, utilizando a Inteligência
-                Artificial como aliada estratégica para acelerar a entrega de produtos reais, testáveis e prontos para o
-                mercado.
-
-                Status: Ativo e em evolução.
-
-                Stack: HTML5 | CSS3 | JavaScript | Git</p>
-            <div class="contatos-social">
-                <div class="icon">
-                    <img src="src/images/linkedin.png" alt="">
-                    <p><a href="https://www.linkedin.com/in/wellinton-oliveira-a630a138b/">Linkedin</a></p>
+        <h2 class="section-title">Sobre <span class="verde">& Contato</span></h2>
+        <div class="contatos-grid">
+            <div class="contatos-wraper premium-glass">
+                <div class="perfil-header">
+                    <div class="perfil-img-container">
+                        <img src="src/images/perfil.png" alt="Wellinton Oliveira" class="perfil-img-pro">
+                        <div class="status-badge-online">Ativo e em evolução</div>
+                    </div>
+                    <div class="perfil-info">
+                        <h1 class="glitch-name" data-text="Wellinton Oliveira">Wellinton Oliveira</h1>
+                        <h3 class="role-title">Fullstack Web & Mobile Developer</h3>
+                    </div>
                 </div>
 
-                <div class="icon">
-                    <img src="src/images/github.png" alt="">
-                    <p><a href="https://github.com/Bunker25Logic">GitHub</a></p>
+                <div class="perfil-body">
+                    <p class="perfil-text-pro">
+                        <span class="highlight-text">Sou estudante de Ciência da Computação focado em construir o futuro da web através de
+                        lógica limpa e ferramentas eficientes.</span> Sob a identidade do Bunker25, transformo o caos em código
+                        organizado, utilizando <span class="verde">JavaScript (Vanilla), React e C#</span> para criar soluções que vão de ferramentas de
+                        desenvolvimento a plataformas web e mobile.
+                        <br><br>
+                        Minha metodologia é baseada em micro-objetivos e alta produtividade, utilizando a Inteligência
+                        Artificial como aliada estratégica para acelerar a entrega de produtos reais, testáveis e prontos para o mercado.
+                    </p>
+                    
+                    <div class="stack-resume">
+                        <strong>Core Stack:</strong> HTML5 | CSS3 | JavaScript | React | Git
+                    </div>
                 </div>
 
-                <div class="icon">
-                    <img src="src/images/o-email.png" alt="">
-                    <p><a href="mailto:bunker25logic@gmail.com">Email</a></p>
-                </div>
+                <div class="contatos-social-pro">
+                    <a href="https://www.linkedin.com/in/wellinton-oliveira-a630a138b/" target="_blank" class="social-btn">
+                        <div class="social-icon-wrapper">
+                            <img src="src/images/linkedin.png" alt="LinkedIn">
+                        </div>
+                        <span>LinkedIn</span>
+                    </a>
 
+                    <a href="https://github.com/Bunker25Logic" target="_blank" class="social-btn">
+                        <div class="social-icon-wrapper">
+                            <img src="src/images/github.png" alt="GitHub">
+                        </div>
+                        <span>GitHub</span>
+                    </a>
+
+                    <a href="mailto:bunker25logic@gmail.com" class="social-btn email-btn">
+                        <div class="social-icon-wrapper">
+                            <img src="src/images/o-email.png" alt="Email">
+                        </div>
+                        <span>Enviar Email</span>
+                    </a>
+                </div>
             </div>
-
         </div>
     </section>
 
