@@ -31,12 +31,14 @@
 
 
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: 'Orbitron';
-
-
 }
 
 /* Header Profissional (Navbar) */

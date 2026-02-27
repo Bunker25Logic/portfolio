@@ -20,21 +20,33 @@ function esconderTudo() {
   secaoAplicacoes.style.display = "none";
 }
 
+// Elementos do menu mobile
+const menuToggle = document.getElementById("menu-toggle");
+
+function fecharMenuMobile() {
+  if (menuToggle && menuToggle.checked) {
+    menuToggle.checked = false;
+  }
+}
+
 function abrirContato(event) {
   event.preventDefault(); // Evita o comportamento padrão do link
   esconderTudo();
   secaoContato.style.display = "block";
+  fecharMenuMobile();
 }
 
 function abrirAplicacoes(event) {
   event.preventDefault(); // Evita o comportamento padrão do link
   esconderTudo();
   secaoAplicacoes.style.display = "block";
+  fecharMenuMobile();
 }
 
 function abrirHome() {
   esconderTudo();
   elementosHome.forEach((el) => (el.style.display = ""));
+  fecharMenuMobile();
 }
 
 // Adiciona os eventos de clique
