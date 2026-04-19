@@ -88,7 +88,7 @@ React • React Native • Integração com APIs</p>
         <div class="skills-grid">
             <div class="skill-card premium-glass">
                 <div class="skill-header-card">
-                    <div class="skill-icon-txt js-color">JS</div>
+                    <img src="src/images/js.png" alt="JS" class="skill-icon-img">
                     <h3>JavaScript Vanilla</h3>
                 </div>
                 <p>Arquiteturas complexas e interações de alta performance sem bibliotecas pesadas.</p>
@@ -124,11 +124,38 @@ React • React Native • Integração com APIs</p>
 
             <div class="skill-card premium-glass">
                 <div class="skill-header-card">
-                    <div class="skill-icon-txt git-color">Git</div>
+                    <img src="src/images/git.png" alt="Git" class="skill-icon-img">
                     <h3>Git</h3>
                 </div>
                 <p>Versionamento de código estruturado, seguro, com commits limpos para colaboração avançada.</p>
                 <div class="skill-progress"><div class="progress-bar" style="width: 80%;"></div></div>
+            </div>
+
+            <div class="skill-card premium-glass">
+                <div class="skill-header-card">
+                    <img src="src/images/biblioteca.png" alt="React" class="skill-icon-img">
+                    <h3>React & Vite</h3>
+                </div>
+                <p>Ecossistema moderno para SPAs rápidas, componentização avançada e ferramentas de build ultra-velozes.</p>
+                <div class="skill-progress"><div class="progress-bar react-color" style="width: 85%;"></div></div>
+            </div>
+
+            <div class="skill-card premium-glass">
+                <div class="skill-header-card">
+                    <div class="skill-icon-txt vue-color">VUE</div>
+                    <h3>Vue.js</h3>
+                </div>
+                <p>Framework progressivo focado em simplicidade e performance para interfaces reativas elegantes.</p>
+                <div class="skill-progress"><div class="progress-bar vue-color" style="width: 75%;"></div></div>
+            </div>
+
+            <div class="skill-card premium-glass">
+                <div class="skill-header-card">
+                    <img src="src/images/firebase.png" alt="Firebase" class="skill-icon-img">
+                    <h3>Backend as a Service</h3>
+                </div>
+                <p>Firebase e Supabase para infraestrutura real-time, autenticação segura e bancos de dados escaláveis.</p>
+                <div class="skill-progress"><div class="progress-bar fire-color" style="width: 80%;"></div></div>
             </div>
         </div>
     </section>
@@ -137,29 +164,86 @@ React • React Native • Integração com APIs</p>
     <section class="projects">
         <h2 id="projetos" class="section-title">Meus <span class="verde">Projetos</span></h2>
         <div class="projects-grid">
-            <!-- Projeto wIDE -->
+            <!-- Projeto onlineGameBunker -->
             <div class="project-card-pro premium-glass">
+                <div class="project-thumbnail">
+                    <img src="src/images/online_game_bunker.png" alt="Preview onlineGameBunker">
+                </div>
                 <div class="project-header-pro">
-                    <h3>wIDE <span class="status-badge pulse">Ativo</span></h3>
-                    <p class="project-desc">Editor de código web progressivo com live preview e console integrado via postMessage. Sistema de projetos com persistência local avançada.</p>
+                    <h3>onlineGameBunker <span class="status-badge pulse">Online</span></h3>
+                    <p class="project-desc">RPG 3D de mundo aberto com combate em arenas, sistema de login funcional via Firebase e salvamento consistente de XP e progresso do jogador.</p>
                 </div>
                 <div class="tech-stack">
-                    <span class="tech-tag">React 19</span>
-                    <span class="tech-tag">TypeScript 5.8</span>
-                    <span class="tech-tag">Vite 6</span>
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Vite</span>
+                    <span class="tech-tag">Three.js</span>
+                    <span class="tech-tag">Firebase</span>
                 </div>
                 <div class="project-footer">
                     <div class="mini-cards">
                         <img src="src/images/biblioteca.png" alt="react">
-                        <img src="src/images/ts.png" alt="typescript">
-                        <img src="src/images/ia.png" alt="ia">
+                        <img src="src/images/js.png" alt="javascript">
+                        <img src="src/images/threejs.png" alt="threejs">
+                        <img src="src/images/firebase.png" alt="firebase">
+                        <img src="src/images/accaunt.png" alt="auth">
                     </div>
-                    <a href="https://bunker25logic.github.io/wIDE/" target="_blank" class="btn-link-pro">Acessar</a>
+                    <a href="https://bunker25logic.github.io/onlineGameBunker/" target="_blank" class="btn-link-pro">Acessar</a>
+                </div>
+            </div>
+
+            <!-- Projeto bunkerDex -->
+            <div class="project-card-pro premium-glass">
+                <div class="project-thumbnail">
+                    <img src="src/images/bunkerDex.png" alt="Preview bunkerDex">
+                </div>
+                <div class="project-header-pro">
+                    <h3>bunkerDex <span class="status-badge pulse">Ativo</span></h3>
+                    <p class="project-desc">Pokedex inspirada em terminal com interface de alta performance. Implementada com lógica de tratamento de erros robusta (try...catch).</p>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JS Vanilla</span>
+                </div>
+                <div class="project-footer">
+                    <div class="mini-cards">
+                        <img src="src/images/html-5.png" alt="html5">
+                        <img src="src/images/css3.png" alt="css3">
+                        <img src="src/images/js.png" alt="javascript">
+                    </div>
+                    <a href="https://bunker25logic.github.io/bunkerdex/" target="_blank" class="btn-link-pro">Acessar</a>
+                </div>
+            </div>
+
+            <!-- Projeto Rick and Morty -->
+            <div class="project-card-pro premium-glass">
+                <div class="project-thumbnail">
+                    <img src="src/images/rickMorty.png" alt="Preview Rick and Morty">
+                </div>
+                <div class="project-header-pro">
+                    <h3>Rick and Morty <span class="status-badge">Ativo</span></h3>
+                    <p class="project-desc">Explorador de personagens e dimensões baseado na API oficial de Rick and Morty, com consumo de dados seguro e performático.</p>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JS Vanilla</span>
+                </div>
+                <div class="project-footer">
+                    <div class="mini-cards">
+                        <img src="src/images/html-5.png" alt="html5">
+                        <img src="src/images/css3.png" alt="css3">
+                        <img src="src/images/js.png" alt="javascript">
+                    </div>
+                    <a href="https://bunker25logic.github.io/rickMorty/" target="_blank" class="btn-link-pro">Acessar</a>
                 </div>
             </div>
 
             <!-- Projeto GameDevTools -->
             <div class="project-card-pro premium-glass">
+                <div class="project-thumbnail">
+                    <img src="src/images/wgameDevTools.png" alt="Preview WGameDevTools">
+                </div>
                 <div class="project-header-pro">
                     <h3>WGameDevTools <span class="status-badge">Completo</span></h3>
                     <p class="project-desc">Suíte de 8 ferramentas web para desenvolvimento de jogos, combinando IA generativa e processamento visual direto no navegador.</p>
@@ -174,6 +258,7 @@ React • React Native • Integração com APIs</p>
                         <img src="src/images/ts.png" alt="typescript">
                         <img src="src/images/html-5.png" alt="html5">
                         <img src="src/images/ia.png" alt="ia">
+                        <img src="src/images/firebase.png" alt="firebase">
                         <img src="src/images/css3.png" alt="css3">
                     </div>
                     <a href="https://bunker25logic.github.io/WGameDevTools/" target="_blank" class="btn-link-pro">Acessar</a>
@@ -182,6 +267,9 @@ React • React Native • Integração com APIs</p>
 
             <!-- Projeto Sindicato -->
             <div class="project-card-pro premium-glass">
+                <div class="project-thumbnail">
+                    <img src="src/images/stb.png" alt="Preview STB-AC">
+                </div>
                 <div class="project-header-pro">
                     <h3>STB-AC <span class="status-badge">Oficial</span></h3>
                     <p class="project-desc">Plataforma institucional do Sindicato dos Taxistas do Acre. Divulga serviços, histórico e contato com navegação e responsividade fluida.</p>
@@ -203,6 +291,9 @@ React • React Native • Integração com APIs</p>
 
             <!-- Projeto Code Practice -->
             <div class="project-card-pro premium-glass">
+                <div class="project-thumbnail">
+                    <img src="src/images/codePratice.png" alt="Preview Code Practice">
+                </div>
                 <div class="project-header-pro">
                     <h3>Code Practice <span class="status-badge pulse">Educação</span></h3>
                     <p class="project-desc">Plataforma full-stack de desafios de código. Oferece editor integrado, feedback real-time e sistema gamificado com mais de 450 exercícios.</p>
@@ -218,6 +309,7 @@ React • React Native • Integração com APIs</p>
                         <img src="src/images/ts.png" alt="typescript">
                         <img src="src/images/html-5.png" alt="html5">
                         <img src="src/images/ia.png" alt="ia">
+                        <img src="src/images/firebase.png" alt="firebase">
                         <img src="src/images/css3.png" alt="css3">
                     </div>
                     <a href="https://bunker25logic.github.io/codePratice/" target="_blank" class="btn-link-pro">Acessar</a>

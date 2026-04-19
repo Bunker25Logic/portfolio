@@ -54,3 +54,24 @@ linkContato.addEventListener("click", abrirContato);
 linkAplicacoes.addEventListener("click", abrirAplicacoes);
 logoHome.addEventListener("click", abrirHome);
 linksHome.forEach((link) => link.addEventListener("click", abrirHome));
+
+// Lógica para animações ao rolar (IntersectionObserver)
+document.addEventListener("DOMContentLoaded", () => {
+    const observerOptions = {
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, observerOptions);
+
+    const animateElements = document.querySelectorAll(".animate-on-scroll, .skill-card, .project-card-pro, .app-card-store");
+    animateElements.forEach(el => {
+        el.classList.add("animate-on-scroll");
+        observer.observe(el);
+    });
+});

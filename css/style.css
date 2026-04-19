@@ -448,6 +448,80 @@ body {
 .rn-color { background: #61DAFB; box-shadow: 0 0 10px #61DAFB; }
 .html-color { background: #E34F26; box-shadow: 0 0 10px #E34F26; }
 .css-color { background: #1572B6; box-shadow: 0 0 10px #1572B6; }
+.react-color { color: #61DAFB; border-color: #61DAFB; }
+.vue-color { color: #42B883; border-color: #42B883; }
+.fire-color { color: #FFCA28; border-color: #FFCA28; }
+
+/* Utilitários de Animação */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.premium-glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+.premium-glass::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.05),
+        transparent
+    );
+    transition: all 0.6s;
+}
+
+.premium-glass:hover {
+    transform: translateY(-10px) scale(1.02);
+    border-color: var(--neon-color);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 
+                0 0 20px rgba(57, 255, 20, 0.2);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.premium-glass:hover::before {
+    left: 100%;
+}
+
+.section-title {
+    font-size: 3rem;
+    text-align: center;
+    margin: 60px 0 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--neon-color);
+    margin: 15px auto 0;
+    box-shadow: 0 0 10px var(--neon-color);
+    border-radius: 2px;
+}
 
 
 /* Projetos Profissionais */
@@ -463,6 +537,30 @@ body {
     padding: 0 20px;
     max-width: 1200px;
     margin: 0 auto 60px;
+}
+
+/* Thumbnails de Projetos */
+.project-thumbnail {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(57, 255, 20, 0.2);
+    background: #000;
+}
+
+.project-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    opacity: 0.85;
+}
+
+.project-card-pro:hover .project-thumbnail img {
+    transform: scale(1.1);
+    opacity: 1;
 }
 
 .project-card-pro {
@@ -531,31 +629,46 @@ body {
 
 .project-footer {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    gap: 20px;
     border-top: 1px solid rgba(240, 240, 240, 0.1);
     padding-top: 20px;
+    align-items: center;
 }
 
 .btn-link-pro {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(57, 255, 20, 0.1), rgba(46, 91, 255, 0.1));
     color: var(--neon-color);
     border: 1px solid var(--neon-color);
-    padding: 8px 20px;
+    padding: 12px 25px;
     text-decoration: none;
-    border-radius: 20px;
+    border-radius: 12px;
     font-size: 14px;
-    font-family: 'Oxanium', sans-serif;
-    transition: all 0.3s ease;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
 }
 
 .btn-link-pro:hover {
-    background: var(--neon-color);
+    background: linear-gradient(135deg, var(--neon-color), #2E5BFF);
     color: var(--bg-color);
-    box-shadow: 0 0 15px var(--neon-color);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 0 25px rgba(57, 255, 20, 0.6);
+    border-color: transparent;
 }
 
 div.mini-cards {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
 }
 
